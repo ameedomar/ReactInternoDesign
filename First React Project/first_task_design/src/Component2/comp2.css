@@ -1,44 +1,103 @@
-.main-parent2{
+/*.main-parent2{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-.parent2{
+    text-align: center; */
+
+/* .parent2{
    display: flex;
    flex-direction: row;
    width: 70%;
 
-}
-.container2{
+} */
+/* .container2{
     width: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.title{
-    margin-top: 150px;
-}
-.description{
-    width: 70%;
-    font-family: Jost;
-    font-size: 15px;
+} */
+
+.title2{
+
+    
+    font-family: 'DM Serif Display';
+    font-style: normal;
     font-weight: 400;
-    line-height: 33px;
-    letter-spacing: 0.01em;
+    font-size: 25px;
+    line-height: 125%;
+    
+    display: flex;
+    align-items: center;
     text-align: center;
+    
+    color: #292F36;
 }
-.btnPart{
+.description2{
+
+    
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    
+    color: #4D5053;
+}
+.readMoreBtn{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    color: #4D5053;
+
+}
+.col-md-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 52px;
+}
+.button2{
     display: flex;
     flex-direction: row;
-}
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 0px;
+    gap: 12px;
+    
+    width: 120.14px;
+    height: 23px;
 
+}
+.sub-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    
+    width: 358px;
+    height: 150px;   
+}
 .arrowVector{
-    margin-top: 6px;
-    width: 14px;
-    height: 14px;
+    width: 15.14px;
+    height: 13.18px;
+    margin-top: -12px;
 }
 @media screen and (max-width: 710px){
 

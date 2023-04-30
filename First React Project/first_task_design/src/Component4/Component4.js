@@ -6,10 +6,10 @@ import "./comp4.css";
 
 function Component4() {
   return (
-    <div className="main-parent4">
-      <div className="parent4">
-        <div className="address4">
-          <div className="left-side">
+    <div className="parent4">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-5">
             <h3 className="title4">
               We Create The Art Of Stylish Living Stylishly
             </h3>
@@ -23,19 +23,21 @@ function Component4() {
                 {" "}
                 <img src={call} className="callVector" />
               </div>
-              <div>
+              <div className="phonetext">
                 <p className="phoneNumber">012345678</p>
                 <p className="callUs">Call Us Anytime</p>
               </div>
             </div>
+
             <button className="btn">
               Get Free Estimate
               <img src={vector} />
             </button>
           </div>
-        </div>
-        <div className="right-side">
-          <img src={comp4Img} className="comp4Img"></img>
+
+          <div className="col-md-5">
+            <img src={comp4Img} className="comp4Img"></img>
+          </div>
         </div>
       </div>
     </div>

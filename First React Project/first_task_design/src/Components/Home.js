@@ -1,4 +1,5 @@
 import React from "react";
+import Component0 from "../Component0/Component0";
 import Component1 from "../Component1/Component1";
 import Component2 from "../Component2/Component2";
 import Component3 from "../Component3/Component3";
@@ -12,10 +13,10 @@ import "../css/home.css";
 function Home() {
   return (
     <div className="home">
-      <Component1 />
+      <Component0 />
       <Component2 />
-      <Component4 />
       <Component3 />
+      <Component4 />
       <Component5 />
       <Component6 />
       <Component7 />

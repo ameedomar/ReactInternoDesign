@@ -6,71 +6,56 @@ import k3 from "../imgs/displatKitchan3.png";
 import arrowBtn from "../imgs/arrowBtn.png";
 import "./comp6.css";
 function Component6() {
-  const arrayofData = {
-    first: {
+  const descriptionStatment =
+    "It is a long established fact that a reader will be distracted bythe of readable content of a page when lookings at its layouts thepoints of using.";
+  const dataToDisplay = [
+    {
       photo: k1,
       title: "Let’s Get Solution For Building Construction Work",
       dates: "26 December,2022",
     },
-    second: {
+    {
       photo: k2,
-      title: "Low Cost Latest Invented Interior Designing Ideas",
+      title: "Low Cost Latest Invented Interior Designing Ideas.",
       dates: "22 December,2022",
     },
-    third: {
+    {
       photo: k3,
       title: "Best For Any Office & Business Interior Solution",
       dates: "25 December,2022",
     },
-  };
+  ];
 
   return (
     <div className="main-parent6">
       <div className="parent6">
-        <div className="topside">
-          <h2 className="article">Articles & News</h2>
-          <p className="description6">
-            It is a long established fact that a reader will be distracted by
-            the of readable content of a page when lookings at its layouts the
-            points of using.
-          </p>
+        <div className="row">
+          <div className="col-md-7">
+            <div className="topside">
+              <h2 className="article">Articles & News</h2>
+              <p className="description6">{descriptionStatment}</p>
+            </div>
+          </div>
         </div>
-        <div className="cardsComp">
-          <div className="displayside">
-            <div className="content">
-              <img src={k1} className="kitchan" />
-              <h3 className="h3">
-                Let’s Get Solution For Building Construction Work
-              </h3>
-              <div className="lastline">
-                <p className="date">25 December,2022</p>
-                <img src={arrowBtn} className="arrowBtn" />
+
+        <div className="container">
+          <div className="row">
+            {dataToDisplay.map((item) => (
+              <div className="col-sm-4">
+                <div className="displaySideBox">
+                  <img
+                    src={item.photo}
+                    alt="Kitchan photo"
+                    className="kitchan"
+                  />
+                  <h3>{item.title}</h3>
+                  <div className="lastline">
+                    <p className="date">{item.dates}</p>
+                    <img src={arrowBtn} alt="Arrow Button" />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="displayside">
-            <div className="content">
-              <img src={k2} className="kitchan" />
-              <h3 className="h3">
-                Low Cost Latest Invented Interior Designing Ideas.
-              </h3>
-              <div className="lastline">
-                <p className="date">26 December,2022</p>
-                <img src={arrowBtn} className="arrowBtn" />
-              </div>
-            </div>
-          </div>
-          <div className="displayside">
-            <div className="content">
-              <img src={k3} className="kitchan" />
-              <h3 className="h3">
-                Best For Any Office & Business Interior Solution
-              </h3>
-              <div className="lastline">
-                <p className="date">25 December,2022</p>
-                <img src={arrowBtn} className="arrowBtn" />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

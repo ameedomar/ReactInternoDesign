@@ -3,33 +3,22 @@ import "./comp5.css";
 import line from "../imgs/Line.png";
 
 function Component5() {
+  const infoToDisplay = [
+    { num: 12, category: "Years Of Experiance" },
+    { num: 85, category: "Success Project" },
+    { num: 15, category: "Active Project" },
+    { num: 95, category: "Happy CUstomers" },
+  ];
   return (
-    <div className="main-parent5">
-      <div className="parent5">
-        <div className="c1">
-          <h2> 12</h2>
-          <p className="des">Years Of Experiance</p>
-        </div>
-        <div className="line5">
-          <img src={line} />
-        </div>
-        <div className="c2">
-          <h2> 85</h2>
-          <p className="des">Success Project</p>
-        </div>
-        <div className="line5">
-          <img src={line} />
-        </div>
-        <div className="c3">
-          <h2> 15</h2>
-          <p className="des">Active Project</p>
-        </div>
-        <div className="line5">
-          <img src={line} />
-        </div>
-        <div className="c4">
-          <h2> 95</h2>
-          <p className="des">Happy CUstomers</p>
+    <div className="parentforComp5">
+      <div className="container">
+        <div className="row">
+          {infoToDisplay.map((item) => (
+            <div className="col-md-3">
+              <h2>{item.num}</h2>
+              <p className="des">{item.category}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

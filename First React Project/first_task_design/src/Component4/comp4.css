@@ -1,35 +1,31 @@
 .parent4{
-    display: flex;
-    flex-direction: row;
+    margin-top: 175px;
+}
+.row{
     justify-content: center;
-    margin-top: 180px;
 }
-.address4{
-    width: 360px;
-    padding-top: 0px;
-}
-.left-side{
-    padding-top: 0px;
-}
+
 .title4{
-    font-family: DM Serif Display;
-    width: 75%;
-    font-size: 30px;
+    padding-right: 8px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
     font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 0.02em;
-    text-align: left;
+    font-size: 50px;
+    line-height: 125%;
     
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    
+    color: #292F36;
 }
 .description4{
-    width: 350px;
-    padding: 22px 0;
+    padding-right: 45px;
     font-family: 'Jost';
     font-style: normal;
-    font-weight: 550;
-    font-size: 16px;
-    line-height: 140%;
-    
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
     
     display: flex;
     align-items: center;
@@ -40,39 +36,39 @@
 .callSection{
     display: flex;
     flex-direction: row;
+    margin-top: 45px;
 }
 .callVector{
-    width: 50px;
-    margin-top: 20px;
-    margin-right: 20px;
+    width: 93px;
+    height: 93px;
+    padding: 5px;
+
+}
+.phonetext{
+    padding: 0px 0px;
 }
 .phoneNumber{
-    margin-top: 35px;
-    width: 141px;
-    height: 4px;
-    
     font-family: 'Jost';
-    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 80%;
-
+    font-size: 24px;
+    font-style: normal;
+    line-height: 150%;
+    
     display: flex;
     align-items: center;
     letter-spacing: 0.01em;
+    
     color: #4D5053;
-
+    
 }
 .callUs{
-    width: 169px;
-    height: 4px;
-    
+
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 70%;
-   
+    font-size: 22px;
+    line-height: 150%;
+    
     display: flex;
     align-items: center;
     letter-spacing: 0.01em;
@@ -87,27 +83,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 20px;
+    padding: 18px;
 
     gap: 5px;
 
-    width: 170px;
-    height: 45px;
+;
     background: #292F36;
     box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
     border-radius: 14px;
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
 }
 .comp4Img{
-    width: 350px;
-    height: 440px;
-    border-top-right-radius: 180px;
+   height: auto;
+   max-width: 100%;
+
+    border-top-right-radius: 50% 50%;
     border-bottom-left-radius: 80px ;
-}
-.right-side{
-    margin-left: 30px;
 }

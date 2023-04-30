@@ -9,21 +9,25 @@ import "./comp3.css";
 const data = [
   {
     img: p,
+    class: "c1",
     title: "Modern Kitchan",
     description: "Decor / Artchitecture",
   },
   {
     img: p1,
+    class: "c2",
     title: "Modern Kitchan",
     description: "Decor / Artchitecture",
   },
   {
     img: p2,
+    class: "c3",
     title: "Modern Kitchan",
     description: "Decor / Artchitecture",
   },
   {
     img: p3,
+    class: "c4",
     title: "Modern Kitchan",
     description: "Decor / Artchitecture",
   },
@@ -41,25 +45,35 @@ function Component3() {
         </p>
       </div>
       <div className="outerShowPart">
-        <div class="container">
-          <div class="row">
-            {data.map((item) => (
-              <div class="col-sm-6">
-                <div className="photos">
-                  <img className="p" src={item.img} alt="Kitchan img" />
+        <div className="rowComp3">
+          <div class="container">
+            <div class="row">
+              {data.map((item) => (
+                <div class="col-md-5">
+                  <div className="photos">
+                    <img
+                      className={item.class}
+                      src={item.img}
+                      alt="Kitchan img"
+                    />
 
-                  <div className="footerTextArrow">
-                    <div className="texts">
-                      <h6 className="modernKitchan">{item.title}</h6>
-                      <p className="decor">{item.description} </p>
-                    </div>
-                    <div className="goToNext">
-                      <img src={goToNext} alt={goToNext} className="goToNext" />
+                    <div className="footerTextArrow">
+                      <div className="texts">
+                        <h6 className="modernKitchan">{item.title}</h6>
+                        <p className="decor">{item.description} </p>
+                      </div>
+                      <div className="goToNext">
+                        <img
+                          src={goToNext}
+                          alt={goToNext}
+                          className="goToNext"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
