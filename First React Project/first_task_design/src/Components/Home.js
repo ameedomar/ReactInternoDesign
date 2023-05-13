@@ -14,6 +14,7 @@ function Home() {
   return (
     <div className="home">
       <Component0 />
+      <Component1 />
       <Component2 />
       <Component3 />
       <Component4 />

@@ -1,6 +1,7 @@
 import React from "react";
 import "./comp0.css";
 import logo from "../imgs/Logo.png";
+import searchIcon from "./../imgs/search-icon.png";
 
 function Component0() {
   return (
@@ -60,6 +61,14 @@ function Component0() {
               <a class="nav-link " href="#">
                 Contact
               </a>
+            </li>
+            <li class="nav-item mx-3 my-2">
+              {" "}
+              <img
+                src={searchIcon}
+                alt="search-icon"
+                className="search-icon"
+              />{" "}
             </li>
           </ul>
         </div>
