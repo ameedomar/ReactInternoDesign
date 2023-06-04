@@ -3,16 +3,17 @@
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
-    
     color: #292F36;
 }
+
 .rowForLogo{
     display: flex;
-    width: 140px;
     justify-content: space-between;
     flex-direction: row;
-    height: 30px;
+    height: 80px;
     margin-bottom: 18px;
+}
+.btnsBar{
 }
 .nav-link{
     font-size: 17px;

@@ -10,7 +10,7 @@ function Component1() {
           <div className="row d-flex justify-content-center px-2">
             <div className="col-md-8 align-self-center px-5">
               <div className="contentImg">
-                <h5 className="summerImg">SUMMER 2020</h5>
+                {/* <h5 className="summerText">SUMMER 2020</h5> */}
                 <h1 className="titleImg">Let Your Home Be Unique</h1>
                 <h3 className="descriptionImg">
                   There are many variations of the passages of lorem Ipsum
